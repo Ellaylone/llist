@@ -51,3 +51,10 @@ var server = {
     host: 'localhost',
     port: '9000'
 }
+
+gulp.task('html:build', function(){
+    gulp.src(path.src.html)
+        .pipe(rigger())
+        .pipe(gulp.dest(path.build.html))
+        .pipe(connect.reload());
+});
