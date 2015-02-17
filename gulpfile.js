@@ -34,7 +34,6 @@ var path = {
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
-
     //NOTE watch changes
     watch: {
         html: 'src/**/*.html',
@@ -56,5 +55,15 @@ gulp.task('html:build', function(){
     gulp.src(path.src.html)
         .pipe(rigger())
         .pipe(gulp.dest(path.build.html))
+        .pipe(connect.reload());
+});
+
+gulp.task('js:build', function(){
+    gulp.src(path.src.js)
+        .pipe(rigger())
+        .pipe(sourcemaps.init())
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(path.build.js))
         .pipe(connect.reload());
 });
