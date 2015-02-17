@@ -1,0 +1,21 @@
+{
+    "name": "llist",
+    "version": "1.0.0",
+    "homepage": "https://github.com/Ellaylone/llist",
+    "authors": [
+        "Ellaylone"
+    ],
+    "description": "llist",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "normalize.css": "*",
+        "jquery": "2.*"
+    }
+}
