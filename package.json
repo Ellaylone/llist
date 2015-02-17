@@ -2,16 +2,12 @@
     "name": "llist",
     "version": "1.0.0",
     "description": "llist",
-    "main": "index.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/Ellaylone/llist.git"
     },
     "author": "Ellaylone",
     "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/Ellaylone/llist/issues"
-    },
     "homepage": "https://github.com/Ellaylone/llist",
     "devDependencies": {
         "gulp": "^3.8.1",
