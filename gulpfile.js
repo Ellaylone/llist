@@ -21,9 +21,9 @@ var path = {
     build: {
         html: 'build/',
         js: 'build/js/',
-        css: 'build/css',
-        img: 'build/img',
-        fonts: 'build/fonts'
+        css: 'build/css/',
+        img: 'build/img/',
+        fonts: 'build/fonts/'
     },
 
     //NOTE source path
@@ -32,7 +32,7 @@ var path = {
         js: 'src/js/main.js',
         style: 'src/style/main.scss',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*',
+        fonts: 'src/fonts/**/*.*'
     },
 
     //NOTE watch changes
@@ -41,7 +41,7 @@ var path = {
         js: 'src/js/**/*.js',
         style: 'src/style/**/*.scss',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*',
+        fonts: 'src/fonts/**/*.*'
     },
 
     clean: '.build',
