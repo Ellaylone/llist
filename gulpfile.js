@@ -43,7 +43,7 @@ var path = {
         fonts: 'src/fonts/**/*.*'
     },
 
-    clean: '.build',
+    clean: './build',
 };
 
 var server = {
@@ -122,3 +122,21 @@ gulp.task('watch', function(){
         gulp.start('fonts:build');
     });
 });
+
+gulp.task('webserver', function(){
+    connect.server({
+        host: server.host,
+        port: server.port,
+        livereload: true
+    });
+});
+
+gulp.task('clean', function(cb){
+    rimraf(path.clean, cb);
+});
+
+gulp.task('openbrowser', function() {
+    opn( 'http://' + server.host + ':' + server.port + '/build' );
+});
+
+gulp.task('default', ['build', 'webserver', 'watch', 'openbrowser']);
